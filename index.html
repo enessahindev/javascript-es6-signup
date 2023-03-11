@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ES6 - LoginPage</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="login-card">
+        <img src="assets/images/login.svg" alt="">
+        <h2>Log/ in</h2>
+        <h3>Please enter your details.</h3>
+        <form class="login-form">
+            <div class="userName">
+                <input spellcheck="false" type="text" id="uName" placeholder="Username" onkeyup="handleChange(event)"
+                    onkeydown="handleStartTyping()" required />
+            </div>
+            <div id="spinner" class="spinner"></div>
+            <div id="alert" class="alert">
+                Kullanıcı adı mevcut.
+            </div>
+            <div class="userPass">
+                <input spellcheck="false" class="input" id="uPass" type="password" placeholder="Password"
+                    onkeyup="handleChange(event)" onkeydown="handleStartTyping()" required />
+            </div>
+            <button class="control" type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
